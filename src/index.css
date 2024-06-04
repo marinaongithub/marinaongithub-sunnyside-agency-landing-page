@@ -1,33 +1,77 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-v-dark-desat-blue: hsl(212, 27%, 19%);
+  --clr-v-dark-grey-blue:  hsl(213, 9%, 39%);
+  --clr-soft-red: hsl(7, 99%, 70%);
+  --clr-yellow: hsl(51, 100%, 49%);
+  --gap-1: 1rem;
+  --gap-2: 2rem;
+  
 }
 
-a {
+/* CSS RESET */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* UTILITY CLASSES */
+
+/* Fonts */
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fraunces-bold {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fraunces-black {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Layout */
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {

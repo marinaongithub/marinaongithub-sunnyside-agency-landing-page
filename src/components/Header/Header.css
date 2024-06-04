@@ -1,0 +1,50 @@
+nav {
+    flex-direction: row;
+    position: relative;
+}
+
+nav ul {
+    flex-direction: column;
+    gap: var(--gap-2);
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    margin-top: 2rem;
+    /* padding: 2rem 6rem; */
+    color: var(--clr-v-dark-grey-blue);
+    text-align: center;
+    background-color: bisque;
+    width: 329px;
+    height: 305px;
+}
+
+nav ul::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    border-top-left-radius: 0;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-right: 60px solid bisque; 
+    
+}
+
+nav button {
+    background-color: var(--clr-yellow);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    width: 140px;
+    height: 56px;
+}
+
+
+
+@media only screen and (min-width=1024px) {
+
+    nav ul {
+        gap: 1rem;
+    }
+}
