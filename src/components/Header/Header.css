@@ -1,6 +1,11 @@
 nav {
     flex-direction: row;
     position: relative;
+    margin: 1.5rem;
+}
+
+.visible {
+    visibility: visible;
 }
 
 nav ul {
@@ -9,8 +14,8 @@ nav ul {
     position: absolute;
     right: 0;
     z-index: 2;
-    margin-top: 2rem;
-    /* padding: 2rem 6rem; */
+    margin-top: 5rem;
+    visibility: hidden;    
     color: var(--clr-v-dark-grey-blue);
     text-align: center;
     background-color: bisque;
@@ -31,7 +36,7 @@ nav ul::before {
     
 }
 
-nav button {
+nav button[class="fraunces-bold"] {
     background-color: var(--clr-yellow);
     text-transform: uppercase;
     border: none;
@@ -40,6 +45,16 @@ nav button {
     height: 56px;
 }
 
+.mobile-nav-toggle {
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../assets/images/icon-hamburger.svg');
+    background-repeat: repeat-y;    
+}
 
 
 @media only screen and (min-width=1024px) {
