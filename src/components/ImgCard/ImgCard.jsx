@@ -1,8 +1,11 @@
 import React from 'react'
 
-const ImgCard = () => {
+
+const ImgCard = (props) => {
   return (
-    <div>ImgCard</div>
+    <picture>
+      <img src={props.src} alt={props.alt} />
+    </picture>
   )
 }
 

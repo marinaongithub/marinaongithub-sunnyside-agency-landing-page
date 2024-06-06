@@ -6,6 +6,8 @@
   --clr-yellow: hsl(51, 100%, 49%);
   --gap-1: 1rem;
   --gap-2: 2rem;
+  --gap-2: 6rem;
+  
   
 }
 
@@ -19,7 +21,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: aqua;
+}
+
+img {
+  display: block;
 }
 
 ul {

@@ -1,11 +1,16 @@
+header {
+    background-image: url('../../assets/images/mobile/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 750px;
+    min-height: 1024px;
+    padding: 1.5rem;
+    
+}  
+
 nav {
     flex-direction: row;
     position: relative;
-    margin: 1.5rem;
-}
-
-.visible {
-    visibility: visible;
 }
 
 nav ul {
@@ -14,13 +19,11 @@ nav ul {
     position: absolute;
     right: 0;
     z-index: 2;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    padding-block: 6rem;
     visibility: hidden;    
-    color: var(--clr-v-dark-grey-blue);
-    text-align: center;
-    background-color: bisque;
-    width: 329px;
-    height: 305px;
+    background-color: var(--clr-white);
+    width: 100%;
 }
 
 nav ul::before {
@@ -32,8 +35,13 @@ nav ul::before {
     width: 0;
     height: 0;
     border-top: 60px solid transparent;
-    border-right: 60px solid bisque; 
-    
+    border-right: 60px solid var(--clr-white); 
+}
+
+nav li {
+    color: var(--clr-v-dark-grey-blue);
+    font-size: 1.25em;
+    text-align: center;
 }
 
 nav button[class="fraunces-bold"] {
@@ -56,10 +64,14 @@ nav button[class="fraunces-bold"] {
     background-repeat: repeat-y;    
 }
 
+.visible {
+    visibility: visible;
+}
+
 
 @media only screen and (min-width=1024px) {
 
     nav ul {
-        gap: 1rem;
+        gap: var(--gap-1);
     }
 }
