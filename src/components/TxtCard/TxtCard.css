@@ -1,0 +1,40 @@
+.txtCard {
+    flex-direction: column;
+    padding: 4em 1em;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.txtCard p {
+    color: var(--clr-v-dark-grey-blue);
+    font-size: 1.125rem;
+    margin-block: 2rem;
+}
+
+.learnMore {
+    position: relative;
+    text-transform: uppercase;
+    margin-block: auto;
+}
+
+.learnMore::before {
+    content: '';
+    position: absolute;
+    border-radius: 25px;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    z-index: -1;
+    padding: 5px;
+}
+
+.red::before {
+    background-color: hsla(var(--clr-soft-red), 0.25);
+}
+
+.yellow::before {
+    background-color: hsla(var(--clr-yellow), 0.25);
+}

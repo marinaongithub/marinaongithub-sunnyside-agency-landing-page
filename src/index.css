@@ -2,8 +2,8 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-v-dark-desat-blue: hsl(212, 27%, 19%);
   --clr-v-dark-grey-blue:  hsl(213, 9%, 39%);
-  --clr-soft-red: hsl(7, 99%, 70%);
-  --clr-yellow: hsl(51, 100%, 49%);
+  --clr-soft-red: 7, 99%, 70%;
+  --clr-yellow: 51, 100%, 49%;
   --gap-1: 1rem;
   --gap-2: 2rem;  
 }
@@ -20,17 +20,24 @@ body {
   min-height: 100vh;
 }
 
+button {
+  margin: 0;
+  border: none;
+  background: transparent;
+
+}
+
+h1, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
 picture, img {
   display: block;
 }
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
   padding: 0;
   margin: 0;
 }
@@ -90,6 +97,9 @@ h1 {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
 
 
 

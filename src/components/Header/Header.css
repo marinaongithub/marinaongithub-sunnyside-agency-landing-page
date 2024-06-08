@@ -46,7 +46,7 @@ nav li {
 }
 
 nav button[class="fraunces-bold"] {
-    background-color: var(--clr-yellow);
+    background-color: hsl(var(--clr-yellow));
     text-transform: uppercase;
     border: none;
     border-radius: 25px;
