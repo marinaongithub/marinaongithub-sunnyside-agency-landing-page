@@ -5,13 +5,10 @@
   --clr-soft-red: hsl(7, 99%, 70%);
   --clr-yellow: hsl(51, 100%, 49%);
   --gap-1: 1rem;
-  --gap-2: 2rem;
-  --gap-2: 6rem;
-  
-  
+  --gap-2: 2rem;  
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -23,7 +20,7 @@ body {
   min-height: 100vh;
 }
 
-img {
+picture, img {
   display: block;
 }
 
