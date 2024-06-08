@@ -30,6 +30,11 @@ ul {
   margin: 0;
 }
 
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
 /* UTILITY CLASSES */
 
 /* Accessibility */
@@ -62,6 +67,10 @@ ul {
   font-family: "Fraunces", sans-serif;
   font-weight: 900;
   font-style: normal;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 /* Layout */

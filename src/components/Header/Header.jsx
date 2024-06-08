@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import logo from '../../assets/images/logo.svg'
+import arrow from '../../assets/images/icon-arrow-down.svg'
 import './Header.css'
 
 
@@ -32,6 +33,10 @@ const Header = () => {
                 </li>
             </ul>  
         </nav>
+        <h1 className='fraunces-black upper text-center '>We are creatives</h1>
+        <picture>
+          <img className='arrow' src={arrow} alt="scroll down arrow" />
+        </picture>
     </header>
   )
 }

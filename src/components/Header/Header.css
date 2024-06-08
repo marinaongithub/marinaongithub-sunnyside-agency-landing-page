@@ -7,7 +7,7 @@ header {
     min-height: 538px;
     padding: 1.5rem;
     
-}  
+} 
 
 nav {
     flex-direction: row;
@@ -68,6 +68,16 @@ nav button[class="fraunces-bold"] {
     visibility: visible;
 }
 
+header h1 {
+    margin-block: 5rem 4rem;
+    color: var(--clr-white);
+    font-size: 2.5rem;
+    letter-spacing: 6.25px;
+}
+
+.arrow {
+    margin-inline: auto;
+}
 
 @media only screen and (min-width=1024px) {
 
