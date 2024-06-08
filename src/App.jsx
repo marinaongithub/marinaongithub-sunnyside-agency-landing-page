@@ -7,6 +7,7 @@ import TxtImgCard from './components/TxtImgCard/TxtImgCard.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import egg from '../src/assets/images/mobile/image-transform.jpg'
 import glass from '../src/assets/images/mobile/image-stand-out.jpg'
+import Testimonials from './components/Testimonials/Testimonials.jsx'
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
       <TxtCard h2={txtCards.card2.h2} p={txtCards.card2.p} color={txtCards.card2.color}></TxtCard>
       <TxtImgCard h2={txtImgCards.card1.h2} p={txtImgCards.card1.p} color={txtImgCards.card1.color}></TxtImgCard>
       <TxtImgCard h2={txtImgCards.card2.h2} p={txtImgCards.card2.p} color={txtImgCards.card2.color}></TxtImgCard>
-
+      <Testimonials></Testimonials>
       <ImgGallery></ImgGallery>
       <TxtImgCard></TxtImgCard>
       <Footer></Footer>

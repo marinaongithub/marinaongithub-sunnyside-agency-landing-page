@@ -1,0 +1,14 @@
+.testimonials {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    gap: var(--gap-4);
+}
+
+.testimonials h2 {
+    color: var(--clr-dark-grey-blue);
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+
+
