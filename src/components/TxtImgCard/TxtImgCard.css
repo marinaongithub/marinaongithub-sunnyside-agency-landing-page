@@ -1,0 +1,24 @@
+.txtImgCard {
+    width: 100vw;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 1rem; 
+    gap: var(--gap-2);
+}
+
+.txtImgCard.green {
+    background-image: url('../../assets/images/mobile/image-graphic-design.jpg');
+    color: var(--clr-dark-cyan);
+}
+    
+.txtImgCard.blue {
+    background-image: url('../../assets/images/mobile/image-photography.jpg');
+    color: var(--clr-dark-blue);
+}
+
+.txtImgCard p {
+    line-height: 27px;
+}

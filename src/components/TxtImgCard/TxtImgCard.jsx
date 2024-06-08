@@ -1,8 +1,12 @@
 import React from 'react'
+import './TxtImgCard.css'
 
-const TxtImgCard = () => {
+const TxtImgCard = (props) => {
   return (
-    <div>TxtImgCard</div>
+    <section className={`txtImgCard flex text-center ${props.color}`}>
+      <h2 className='fraunces-bold'>{props.h2}</h2>
+      <p className='barlow-semibold'>{props.p}</p>
+    </section>
   )
 }
 

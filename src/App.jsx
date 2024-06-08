@@ -11,7 +11,7 @@ import glass from '../src/assets/images/mobile/image-stand-out.jpg'
 
 function App() {
 
-  const cards = {
+  const txtCards = {
     card1: {
       "h2": "Transform your brand",
       "p": "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
@@ -24,14 +24,29 @@ function App() {
     }
   }
 
+  const txtImgCards = {
+    card1: {
+      "h2": "Graphic Design",
+      "p": "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.",
+      "color": "green"
+    },
+    card2: {
+      "h2": "Photography",
+      "p": "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
+      "color": "blue",
+    }
+  }
+
   return (
     <>
       <Header></Header>
       <ImgCard src={egg} alt="egg image with yellow background"></ImgCard>
-      <TxtCard h2={cards.card1.h2} p={cards.card1.p} color={cards.card1.color}></TxtCard>
+      <TxtCard h2={txtCards.card1.h2} p={txtCards.card1.p} color={txtCards.card1.color}></TxtCard>
       <ImgCard src={glass} alt="glass image with orange background"></ImgCard>
-      <TxtCard h2={cards.card2.h2} p={cards.card2.p} color={cards.card2.color}></TxtCard>
-      <TxtImgCard></TxtImgCard>
+      <TxtCard h2={txtCards.card2.h2} p={txtCards.card2.p} color={txtCards.card2.color}></TxtCard>
+      <TxtImgCard h2={txtImgCards.card1.h2} p={txtImgCards.card1.p} color={txtImgCards.card1.color}></TxtImgCard>
+      <TxtImgCard h2={txtImgCards.card2.h2} p={txtImgCards.card2.p} color={txtImgCards.card2.color}></TxtImgCard>
+
       <ImgGallery></ImgGallery>
       <TxtImgCard></TxtImgCard>
       <Footer></Footer>
