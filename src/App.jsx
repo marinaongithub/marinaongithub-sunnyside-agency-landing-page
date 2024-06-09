@@ -1,14 +1,15 @@
 import './App.css'
+// components
 import Header from './components/Header/Header.jsx'
 import ImgCard from './components/ImgCard/ImgCard.jsx'
 import ImgGallery from './components/ImgGallery/ImgGallery.jsx'
 import TxtCard from './components/TxtCard/TxtCard.jsx'
 import TxtImgCard from './components/TxtImgCard/TxtImgCard.jsx'
+import Testimonials from './components/Testimonials/Testimonials.jsx'
 import Footer from './components/Footer/Footer.jsx'
+// images
 import egg from '../src/assets/images/mobile/image-transform.jpg'
 import glass from '../src/assets/images/mobile/image-stand-out.jpg'
-import Testimonials from './components/Testimonials/Testimonials.jsx'
-
 
 function App() {
 

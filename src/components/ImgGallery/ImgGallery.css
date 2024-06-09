@@ -1,0 +1,7 @@
+.imgGallery {
+    grid-template-columns: auto auto;
+}
+
+.imgGallery img {
+    width: 50vw;
+}
