@@ -23,7 +23,7 @@ const Header = (props) => {
             <span className="sr-only" aria-expanded={isNavVisible}>
             </span>
           </button>  
-            <ul className={`barlow-semibold flex justify-center text-center ${isNavVisible ? 'visible' : ''}`}>
+            <ul className={`barlow-semibold flex text-center ${isNavVisible ? 'visible' : ''}`}>
                 <li>About</li>
                 <li>Services</li>
                 <li>Project</li>

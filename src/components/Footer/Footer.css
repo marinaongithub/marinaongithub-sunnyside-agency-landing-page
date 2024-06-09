@@ -2,7 +2,7 @@ footer {
     background-color: hsla(168, 44%, 70%, 1);
     flex-direction: column;
     gap: var(--gap-2);
-    padding-block: 3rem;
+    padding-block: 3.5rem;
 }
 
 footer .nav {
@@ -13,6 +13,6 @@ footer .nav {
 
 footer .contacts {
     gap: var(--gap-1);
-    padding-block: 2rem 1rem;
+    padding-block: 3rem 1rem;
     align-items: flex-end;
 }
