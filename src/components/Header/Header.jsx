@@ -1,11 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
-import logo from '../../assets/images/logo.svg'
 import arrow from '../../assets/images/icon-arrow-down.svg'
 import './Header.css'
 
 
-const Header = () => {
+const Header = (props) => {
 
   const [isNavVisible, setIsNavVisible] = useState(false)
 
@@ -18,7 +17,7 @@ const Header = () => {
     <header>
         <nav className='flex'>
           <picture>
-            <img src={logo} className="logo" alt="sunnyside agency logo" width="124" height="24"/>
+            <img src={props.logo} className="logo" alt="sunnyside agency logo" width="124" height="24"/>
           </picture>
           <button className="mobile-nav-toggle" onClick={toggleMenu} aria-controls="nav-list">
             <span className="sr-only" aria-expanded={isNavVisible}>

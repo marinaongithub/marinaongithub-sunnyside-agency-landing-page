@@ -6,8 +6,11 @@ header {
     min-width: 100%;
     min-height: 538px;
     padding: 1.5rem;
-    
 } 
+
+header .logoColor {
+    fill: #fff;
+}
 
 nav {
     flex-direction: row;

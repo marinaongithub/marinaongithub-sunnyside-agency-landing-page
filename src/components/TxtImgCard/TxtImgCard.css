@@ -11,7 +11,7 @@
 
 .txtImgCard.green {
     background-image: url('../../assets/images/mobile/image-graphic-design.jpg');
-    color: var(--clr-dark-cyan);
+    color: hsl(var(--clr-dark-cyan));
 }
     
 .txtImgCard.blue {

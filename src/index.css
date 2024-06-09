@@ -5,8 +5,9 @@
   --clr-dark-grey-blue: hsl(210, 4%, 67%);
   --clr-soft-red: 7, 99%, 70%;
   --clr-yellow: 51, 100%, 49%;
-  --clr-dark-cyan: hsl(167, 40%, 24%);
+  --clr-dark-cyan: 167, 40%, 24%;
   --clr-dark-blue: hsl(198, 62%, 26%);
+  --clr-mod-cyan: hsl(168, 34%, 41%);
   --gap-1: 1rem;
   --gap-2: 2rem;  
   --gap-4: 4rem;
@@ -44,6 +45,11 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a, a:active, a:focus {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* UTILITY CLASSES */
