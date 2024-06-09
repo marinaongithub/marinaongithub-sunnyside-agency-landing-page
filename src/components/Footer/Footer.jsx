@@ -17,10 +17,10 @@ const Footer = (props) => {
           <a href="#txtCard1">About</a>
         </li>
         <li>
-          <a href="#imgTxtCard1">Services</a>
+          <a href="#txtImgCard1">Services</a>
         </li>
         <li>
-          <a href="#imgTxtCard1">Projects</a>
+          <a href="#imgGallery">Projects</a>
         </li>
       </ul>
       <ul className="flex contacts">

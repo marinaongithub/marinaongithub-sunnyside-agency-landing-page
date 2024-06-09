@@ -49,10 +49,10 @@ function App() {
       <TxtCard id="txtCard1" h2={txtCards.card1.h2} p={txtCards.card1.p} color={txtCards.card1.color}></TxtCard>
       <ImgCard src={glass} alt="glass image with orange background"></ImgCard>
       <TxtCard id="txtCard2" h2={txtCards.card2.h2} p={txtCards.card2.p} color={txtCards.card2.color}></TxtCard>
-      <TxtImgCard h2={txtImgCards.card1.h2} p={txtImgCards.card1.p} color={txtImgCards.card1.color}></TxtImgCard>
-      <TxtImgCard h2={txtImgCards.card2.h2} p={txtImgCards.card2.p} color={txtImgCards.card2.color}></TxtImgCard>
+      <TxtImgCard id="txtImgCard1" h2={txtImgCards.card1.h2} p={txtImgCards.card1.p} color={txtImgCards.card1.color}></TxtImgCard>
+      <TxtImgCard id="txtImgCard2" h2={txtImgCards.card2.h2} p={txtImgCards.card2.p} color={txtImgCards.card2.color}></TxtImgCard>
       <Testimonials></Testimonials>
-      <ImgGallery></ImgGallery>
+      <ImgGallery id="imgGallery"></ImgGallery>
       <Footer logo={logoGreen}></Footer>
     </>
   )

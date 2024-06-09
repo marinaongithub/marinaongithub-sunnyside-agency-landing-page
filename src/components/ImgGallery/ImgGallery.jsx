@@ -5,7 +5,7 @@ import cutOrange from '../../assets/images/mobile/image-gallery-orange.jpg'
 import cone from '../../assets/images/mobile/image-gallery-cone.jpg' 
 import sugar from '../../assets/images/mobile/image-gallery-sugar-cubes.jpg'
 
-const ImgGallery = () => {
+const ImgGallery = (props) => {
 
   const imgGallery = {
     img1: { 
@@ -35,7 +35,7 @@ const ImgGallery = () => {
   }
 
   return (
-    <section className='imgGallery grid'>
+    <section id={props.id} className='imgGallery grid'>
       <picture>
         <img src={imgGallery.img1.src} alt={imgGallery.img1.alt} />
       </picture>
