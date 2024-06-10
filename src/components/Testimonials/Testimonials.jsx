@@ -35,24 +35,26 @@ const Testimonials = () => {
     return (
         <article className='testimonials flex'>
             <h2 className='fraunces-black text-center upper'>Client Testimonials</h2>
-            <TestimonialCard 
-                photo={testimonials.card1.photo} 
-                p={testimonials.card1.p}  
-                name={testimonials.card1.name} 
-                role={testimonials.card1.role}>
-            </TestimonialCard>
-            <TestimonialCard 
-                photo={testimonials.card2.photo} 
-                p={testimonials.card2.p} 
-                name={testimonials.card2.name}
-                role={testimonials.card2.role}>
-            </TestimonialCard>
-            <TestimonialCard 
-                photo={testimonials.card3.photo} 
-                p={testimonials.card3.p} 
-                name={testimonials.card3.name}
-                role={testimonials.card2.role}>
-            </TestimonialCard>
+            <div className='testimonialCards flex'>
+                <TestimonialCard 
+                    photo={testimonials.card1.photo} 
+                    p={testimonials.card1.p}  
+                    name={testimonials.card1.name} 
+                    role={testimonials.card1.role}>
+                </TestimonialCard>
+                <TestimonialCard 
+                    photo={testimonials.card2.photo} 
+                    p={testimonials.card2.p} 
+                    name={testimonials.card2.name}
+                    role={testimonials.card2.role}>
+                </TestimonialCard>
+                <TestimonialCard 
+                    photo={testimonials.card3.photo} 
+                    p={testimonials.card3.p} 
+                    name={testimonials.card3.name}
+                    role={testimonials.card2.role}>
+                </TestimonialCard>
+            </div>
         </article>
   )
 }

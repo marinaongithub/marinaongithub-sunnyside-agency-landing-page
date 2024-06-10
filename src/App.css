@@ -1,42 +1,74 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* .layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr auto auto auto auto auto auto;
+  grid-template-areas: "header"
+                        "imgCard1"
+                        "txtCard1"
+                        "imgCard2"
+                        "txtCard2"
+                        "txtImgCard1"
+                        "txtImgCard2"
+                        "testimonials"
+                        "imgGallery"
+                        "footer";
 } */
+
+
+
+@media only screen and (min-width: 768px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "header header"
+                          "txtCard1 imgCard1"
+                          "imgCard2 txtCard2"
+                          "txtImgCard1 txtImgCard2"
+                          "testimonials testimonials"
+                          "imgGallery imgGallery"
+                          "footer footer"
+                          ;
+  }
+
+  header {
+    grid-area: header;
+  }
+  
+  #txtCard1 {
+    grid-area: txtCard1;
+  }
+  
+  #imgCard1 {
+    grid-area: imgCard1;
+  }
+  
+  #imgCard2 {
+    grid-area: imgCard2;
+  }
+  
+  #txtImgCard1 {
+    grid-area: txtImgCard1;
+  }
+  
+  #txtImgCard2 {
+    grid-area: txtImgCard2;
+  }
+  
+  #txtCard2 {
+    grid-area: txtCard2;
+  }
+  
+  .testimonials {
+    grid-area: testimonials;
+  }
+  
+  .imgGallery {
+    grid-area: imgGallery;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+
+}

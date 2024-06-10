@@ -1,5 +1,5 @@
 .txtImgCard {
-    width: 100vw;
+    /* width: 100vw; */
     min-height: 600px;
     flex-direction: column;
     justify-content: flex-end;
@@ -21,4 +21,23 @@
 
 .txtImgCard p {
     line-height: 27px;
+}
+
+@media only screen and (min-width: 728px) {
+
+    .txtImgCard {
+        padding-inline: 12rem;
+    }
+
+    .txtImgCard.green {
+        background-image: url('../../assets/images/desktop/image-graphic-design.jpg');
+    }
+
+    .txtImgCard.blue {
+        background-image: url('../../assets/images/desktop/image-photography.jpg');
+    }
+
+    .txtImgCard h2 {
+        font-size: 1.75rem;
+    }
 }

@@ -1,22 +1,27 @@
 .txtCard {
     flex-direction: column;
     padding: 4em 1em;
+    text-align: center;
 }
 
 .txtCard h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 .txtCard p {
     color: var(--clr-v-dark-grey-blue);
     font-size: 1.125rem;
     margin-block: 2rem;
+    line-height: 30px;
+    text-align: center;
 }
 
 .learnMore {
     position: relative;
     text-transform: uppercase;
     margin-block: auto;
+    text-align: center;
 }
 
 .learnMore::before {
@@ -37,4 +42,23 @@
 
 .yellow::before {
     background-color: hsla(var(--clr-yellow), 0.25);
+}
+
+@media only screen and (min-width: 728px) {
+
+    .txtCard {
+        text-align: left;
+        padding: 10rem 8rem;
+    }
+
+    .txtCard h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    
+    .txtCard p {
+        text-align: left;
+    }
+
+
 }

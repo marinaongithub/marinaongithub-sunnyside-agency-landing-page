@@ -24,3 +24,12 @@
     color: var(--clr-dark-grey-blue);
     font-size: 1.14rem;
 }
+
+@media only screen and (min-width: 768px) {
+
+    .testimonialCard p {
+        padding-inline: 1rem;
+        margin-block: 4rem;
+    }
+
+}

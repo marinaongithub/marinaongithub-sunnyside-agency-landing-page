@@ -3,8 +3,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    min-width: 100%;
-    min-height: 538px;
+    /* min-height: 538px; */
     padding: 1.5rem;
 } 
 
@@ -127,6 +126,8 @@ header h1 {
     }
 
     header h1 {
-        margin-block: 8rem 6rem;
+        margin-block: 8rem 5.5rem;
+        font-size: 3.5rem;
+
     }
 }

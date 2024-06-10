@@ -16,3 +16,18 @@ footer .contacts {
     padding-block: 3rem 1rem;
     align-items: flex-end;
 }
+
+@media only screen and (min-width: 768px) {
+
+    footer .nav li:hover, footer .nav li:hover  {
+        color: var(--clr-white);
+    }
+
+    footer .contacts {
+        gap: var(--gap-2);
+    }
+    
+    footer .contacts a:hover, footer .contacts a:focus { 
+        filter: invert(1) brightness(2);
+    }
+}

@@ -9,7 +9,9 @@ import Testimonials from './components/Testimonials/Testimonials.jsx'
 import Footer from './components/Footer/Footer.jsx'
 // images
 import egg from './assets/images/mobile/image-transform.jpg'
+import eggDesktop from './assets/images/desktop/image-transform.jpg'
 import glass from './assets/images/mobile/image-stand-out.jpg'
+import glassDesktop from './assets/images/desktop/image-stand-out.jpg'
 import logoWhite from './assets/images/logo-white.svg'
 import logoGreen from './assets/images/logo-green.svg'
 
@@ -43,18 +45,18 @@ function App() {
   }
 
   return (
-    <>
+    <div className='layout'>
       <Header logo={logoWhite}></Header>
-      <ImgCard src={egg} alt="egg image with yellow background"></ImgCard>
+      <ImgCard id="imgCard1" src={egg} srcset={eggDesktop} alt="egg image with yellow background"></ImgCard>
       <TxtCard id="txtCard1" h2={txtCards.card1.h2} p={txtCards.card1.p} color={txtCards.card1.color}></TxtCard>
-      <ImgCard src={glass} alt="glass image with orange background"></ImgCard>
+      <ImgCard id="imgCard2" src={glass} srcset={glassDesktop} alt="glass image with orange background"></ImgCard>
       <TxtCard id="txtCard2" h2={txtCards.card2.h2} p={txtCards.card2.p} color={txtCards.card2.color}></TxtCard>
       <TxtImgCard id="txtImgCard1" h2={txtImgCards.card1.h2} p={txtImgCards.card1.p} color={txtImgCards.card1.color}></TxtImgCard>
       <TxtImgCard id="txtImgCard2" h2={txtImgCards.card2.h2} p={txtImgCards.card2.p} color={txtImgCards.card2.color}></TxtImgCard>
       <Testimonials></Testimonials>
       <ImgGallery id="imgGallery"></ImgGallery>
-      <Footer logo={logoGreen}></Footer>
-    </>
+      <Footer className="footerCard" logo={logoGreen}></Footer>
+    </div>
   )
 }
 
